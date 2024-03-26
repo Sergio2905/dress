@@ -1240,8 +1240,49 @@ body._lock {
 }
 
 .article__blog {
+  margin: 0 auto;
+}
+
+.article__blog .header-blog__title {
   max-width: 680px;
   margin: 0 auto;
+}
+
+.article__blog .blog__body {
+  grid-template-columns: 1fr;
+}
+
+.article__blog .card-blog__title {
+  max-width: 680px;
+  width: 100%;
+  margin-inline: auto;
+  margin-bottom: 12px;
+}
+
+.article__blog .card-blog__desc {
+  max-width: 680px;
+  width: 100%;
+  margin-inline: auto;
+  margin-bottom: 20px !important;
+  font-size: 0.875rem !important;
+}
+
+.article__blog .card-blog__author {
+  max-width: 680px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.article__blog .author__public {
+  font-size: 0.875rem !important;
+}
+
+.article__blog .author__desc {
+  font-size: 0.875rem;
+}
+
+.article__blog .author__name {
+  font-size: 0.875rem;
 }
 
 .menu-article {
@@ -1274,6 +1315,18 @@ body._lock {
 
 .author-article {
   margin-bottom: 0 !important;
+}
+
+.author-article_full:not(:last-child) {
+  margin-bottom: 32px !important;
+}
+
+.author-article_full .author-article__main {
+  display: block;
+}
+
+.author-article_full .author-article__person {
+  float: left;
 }
 
 .author-article__body {
@@ -1340,6 +1393,14 @@ body._lock {
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.5;
+}
+
+.author-article__desc a {
+  text-decoration: underline;
+}
+
+.author-article__desc a:hover {
+  text-decoration: none;
 }
 
 .author-article__socials {

@@ -1117,6 +1117,10 @@ body._lock {
   margin-bottom: 16px;
 }
 
+.account__title {
+  margin-bottom: 24px;
+}
+
 .account__icon svg {
   width: 24px;
   height: 24px;
@@ -1142,6 +1146,9 @@ body._lock {
   flex: 1 1 auto;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 16px;
 }
 
 .account__btns {
@@ -1195,6 +1202,11 @@ body._lock {
   background: #000;
   opacity: 0.4;
   margin: 0 8px;
+}
+
+.sort-account__notification {
+  margin-bottom: 16px;
+  text-align: center;
 }
 
 .form-account__title {
