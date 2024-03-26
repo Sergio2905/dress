@@ -1525,7 +1525,7 @@ body._lock {
 }
 
 .goods-product__cat {
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .tabs {
@@ -2896,6 +2896,10 @@ body._lock {
     grid-column: span 12;
     grid-row: span 2;
     order: 2;
+  }
+
+  .goods-product__cat {
+    grid-template-columns: repeat(5, 1fr);
   }
 
   .prod-card__details {
