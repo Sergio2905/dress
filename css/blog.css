@@ -640,6 +640,7 @@ body._lock {
 
 .submenu__item {
   padding: 11px 0;
+  position: relative;
 }
 
 .submenu__item:not(:last-child) {
@@ -683,7 +684,8 @@ body._lock {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
+  width: -moz-max-content;
+  width: max-content;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -2085,6 +2087,10 @@ body._lock {
 }
 
 @media (max-width: 1200px) {
+  .level2-submenu__alphabet {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
   .footer__body {
     flex-direction: column;
   }
@@ -2148,11 +2154,16 @@ body._lock {
   }
 
   .level2-submenu__alphabet {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .level2-submenu__alphabet .alphabet__popular {
     grid-column: span 2;
+  }
+
+  .level2-submenu__list {
+    -moz-columns: 3 150px;
+         columns: 3 150px;
   }
 
   .blog__header {
@@ -2241,6 +2252,7 @@ body._lock {
   .submenu__item {
     border-bottom: 1px solid rgba(17, 34, 65, 0.1);
     padding: 0;
+    position: static;
   }
 
   .submenu__item:first-child {
@@ -2305,6 +2317,7 @@ body._lock {
     transform: translate(-100%, 0);
     padding: 96px 0 16px;
     background: #F7F6F6;
+    width: 100%;
   }
 
   .submenu__level2.active {
@@ -2316,6 +2329,15 @@ body._lock {
   .level2-submenu__header {
     display: flex;
     align-items: center;
+  }
+
+  .level2-submenu__alphabet {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .level2-submenu__list {
+    -moz-columns: 4 150px;
+         columns: 4 150px;
   }
 
   .level2-submenu__link {
