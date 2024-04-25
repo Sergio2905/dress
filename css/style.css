@@ -648,7 +648,6 @@ body._lock {
 
 .tags {
   background: var(--white);
-  margin-bottom: 64px;
   padding: 16px 0;
 }
 
@@ -1275,7 +1274,6 @@ body._lock {
 
 .filter {
   position: relative;
-  background: var(--white);
   transition: all 0.5s ease;
   width: 250px;
 }
@@ -1307,16 +1305,6 @@ body._lock {
   background: #FFF;
   padding: 16px;
   position: relative;
-}
-
-.filter__section::after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  left: 16px;
-  right: 16px;
-  bottom: -8px;
-  background: rgba(17, 34, 65, 0.1);
 }
 
 .filter__section:not(:last-child) {
@@ -1418,6 +1406,8 @@ body._lock {
   position: relative;
   padding-left: 32px;
   cursor: pointer;
+  color: var(--black);
+  display: block;
 }
 
 .filter__radio .radio-options__item._active::before {
@@ -1791,17 +1781,9 @@ body._lock {
   transition: all 0.5s ease;
   margin: 0 auto;
   padding: 16px;
-}
-
-.switcher.on::after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  left: 16px;
-  right: 16px;
-  bottom: 0;
-  background: rgba(17, 34, 65, 0.1);
-  z-index: 1;
+  background: var(--white);
+  margin-bottom: 16px;
+  border-radius: 5px;
 }
 
 .switcher.on .switcher__on {
@@ -4804,6 +4786,7 @@ body._lock {
   -moz-column-gap: 16px;
        column-gap: 16px;
   row-gap: 24px;
+  margin-bottom: 32px;
 }
 
 .category__cat.grid2 {
@@ -4843,6 +4826,29 @@ body._lock {
   font-weight: 500;
   text-align: center;
   opacity: 0.6;
+}
+
+.category__article {
+  background: var(--white);
+  border-radius: 5px;
+  padding: 24px;
+}
+
+.category__article:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.category__article .article__body {
+  max-width: unset;
+}
+
+.category__article .article__section:last-of-type {
+  margin-bottom: 0;
+}
+
+.category__article .article__image {
+  max-width: 680px;
+  margin: 0 auto;
 }
 
 .main-category__header {
@@ -7932,10 +7938,6 @@ body._lock {
     height: 0;
   }
 
-  .filter__section::after {
-    display: none;
-  }
-
   .switcher {
     display: none;
   }
@@ -8701,6 +8703,10 @@ body._lock {
 
   .category__cat.grid5 {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category__article {
+    padding: 24px 16px;
   }
 
   .main-category__sort {
