@@ -2134,7 +2134,7 @@ body._lock {
   color: var(--white);
   font-weight: 800;
   border-radius: 5px;
-  background: linear-gradient(135deg, rgb(34, 125, 176) 0%, rgb(31, 142, 209) 100%);
+  background: linear-gradient(135deg, #112241 0%, rgba(17, 34, 65, 0.76) 100%);
   padding: 8px 10px;
   display: flex;
   align-items: center;
