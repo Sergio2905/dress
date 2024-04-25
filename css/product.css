@@ -153,7 +153,6 @@ body._lock {
   align-items: center;
   justify-content: flex-start;
   width: 150px;
-  min-width: 150px;
   margin-right: 40px;
   position: relative;
   z-index: 200;
@@ -1839,6 +1838,9 @@ body._lock {
   border-radius: 5px;
   background: linear-gradient(135deg, rgb(34, 125, 176) 0%, rgb(31, 142, 209) 100%);
   padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-more {
@@ -2351,7 +2353,7 @@ body._lock {
   position: relative;
   background: url("../img/loading.gif") 50% no-repeat;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -2375,7 +2377,7 @@ body._lock {
 .prod-card__name {
   font-size: 0.875rem;
   font-weight: 500;
-  margin-bottom: 16px;
+  margin-bottom: 5px;
   color: var(--black);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2389,8 +2391,7 @@ body._lock {
   font-family: "Manrope", sans-serif;
   font-size: 0.875rem;
   font-weight: 800;
-  margin-bottom: 8px;
-  text-align: center;
+  margin-bottom: 5px;
   color: var(--black);
 }
 
@@ -2426,6 +2427,7 @@ body._lock {
   color: #112241;
   font-weight: 500;
   margin-bottom: 16px;
+  font-size: 0.875rem;
 }
 
 .prod-card__view {
@@ -2436,14 +2438,15 @@ body._lock {
   align-items: center;
   justify-content: center;
   border-radius: 3px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(33, 33, 33, 0.1);
   position: relative;
   width: 100%;
   padding: 12px;
   margin: 0 8px 8px;
-  transform: translate(0, 150%);
   transition: all 0.5s ease;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .prod-card__view svg {
@@ -2652,6 +2655,10 @@ body._lock {
   transition: all 0.2s linear;
 }
 
+.input_select {
+  position: relative;
+}
+
 .input.warning {
   border: 2px solid #F5D884;
   background: linear-gradient(0deg, rgba(205, 129, 121, 0.02) 0%, rgba(205, 129, 121, 0.02) 100%), #FFF;
@@ -2768,12 +2775,29 @@ body._lock {
   min-height: 100vh;
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .popup__content {
   width: 100%;
   padding: 30px;
   position: relative;
+}
+
+.popup__content.login {
+  max-width: 600px;
+  padding: 0;
+  margin: 0 15px;
+}
+
+.popup__content.login .login__body {
+  margin: 0;
+  padding: 40px;
+}
+
+.popup__content.login .login__form {
+  max-width: 100%;
 }
 
 .viewer {
@@ -3149,7 +3173,6 @@ body._lock {
   .input {
     height: calc(50px + 10 * (100vw - 320px) / 1600);
     margin-bottom: calc(12px + 12 * (100vw - 320px) / 1600);
-    padding: 0 calc(12px + 12 * (100vw - 320px) / 1600);
   }
 
   .footer__rights {
@@ -3530,6 +3553,10 @@ body._lock {
   .goods-product__navigation {
     display: none;
   }
+
+  .popup__content.login .login__body {
+    padding: 24px;
+  }
 }
 
 @media (max-width: 768px) and (max-width: 768px) {
@@ -3687,7 +3714,8 @@ body._lock {
   }
 
   .prod-card:hover .prod-card__view {
-    transform: translate(0, 0);
+    opacity: 1;
+    visibility: visible;
   }
 
   .sizes-card:hover {

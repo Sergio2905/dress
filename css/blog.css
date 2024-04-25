@@ -164,6 +164,9 @@ body._lock {
   border-radius: 5px;
   background: linear-gradient(135deg, rgb(34, 125, 176) 0%, rgb(31, 142, 209) 100%);
   padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-more {
@@ -309,7 +312,6 @@ body._lock {
   align-items: center;
   justify-content: flex-start;
   width: 150px;
-  min-width: 150px;
   margin-right: 40px;
   position: relative;
   z-index: 200;
@@ -1610,6 +1612,10 @@ body._lock {
   transition: all 0.2s linear;
 }
 
+.input_select {
+  position: relative;
+}
+
 .input.warning {
   border: 2px solid #F5D884;
   background: linear-gradient(0deg, rgba(205, 129, 121, 0.02) 0%, rgba(205, 129, 121, 0.02) 100%), #FFF;
@@ -1726,12 +1732,29 @@ body._lock {
   min-height: 100vh;
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .popup__content {
   width: 100%;
   padding: 30px;
   position: relative;
+}
+
+.popup__content.login {
+  max-width: 600px;
+  padding: 0;
+  margin: 0 15px;
+}
+
+.popup__content.login .login__body {
+  margin: 0;
+  padding: 40px;
+}
+
+.popup__content.login .login__form {
+  max-width: 100%;
 }
 
 .viewer {
@@ -2089,7 +2112,6 @@ body._lock {
   .input {
     height: calc(50px + 10 * (100vw - 320px) / 1600);
     margin-bottom: calc(12px + 12 * (100vw - 320px) / 1600);
-    padding: 0 calc(12px + 12 * (100vw - 320px) / 1600);
   }
 
   .footer__rights {
@@ -2384,6 +2406,10 @@ body._lock {
   .author-article__person {
     margin-right: 0;
     margin-bottom: 16px;
+  }
+
+  .popup__content.login .login__body {
+    padding: 24px;
   }
 }
 

@@ -4,7 +4,7 @@
 <head>
     <title>Dresshub</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/main.min.css?_v=20240425111809">
+    <link rel="stylesheet" href="css/main.min.css?_v=20240425142249">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -4190,8 +4190,70 @@
 
     <div class="popup" id="reg">
     <div class="popup__wrapper">
-        <div class="popup__content reg">
-
+        <div class="popup__content login">
+            <div class="login__body">
+                <form action="#" class="login__form">
+                    <div class="login__header">
+                        <h1 class="login__title title1">Register</h1>
+                        <button type="button" class="login__close popup__close">
+                            <svg>
+                                <use href="img/icons/icons.svg#close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="login__input input">
+                        <input type="text" placeholder="E-mail">
+                    </div>
+                    <div class="login__input input">
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="login__input input input_select">
+                        <div class="login__select select-box">
+                            <div class="options-container">
+                                <div class="option">
+                                    <input type="radio" id="reg-woman" name="gender" value="woman">
+                                    <label for="reg-woman">Woman</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" id="reg-man" name="gender" value="man">
+                                    <label for="reg-man">Man</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" id="reg-other" name="gender" value="other">
+                                    <label for="reg-other">Other</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" id="reg-hide" name="gender" value="hide">
+                                    <label for="reg-hide">Prefer not to say</label>
+                                </div>
+                            </div>
+                            <div class="selected">
+                                Gender
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login__checkbox checkbox">
+                        I would like to receive emails about sales, style trends and recommendations about Stylight
+                        shops & products
+                        <input type="checkbox" name="agreement" value="yes">
+                    </div>
+                    <button type="button" class="login__btn btn-reg btn-gradient">Register</button>
+                    <div class="login__success success">
+                        <div class="success__animation">
+                            <svg class="success__circle">
+                                <use href="img/icons/icons.svg#circle"></use>
+                            </svg>
+                            <svg class="success__check">
+                                <use href="img/icons/icons.svg#done"></use>
+                            </svg>
+                        </div>
+                        <div class="success__notification">
+                            You have successfully registered
+                        </div>
+                        <button type="button" class="success__btn btn-white">OK</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
@@ -4218,7 +4280,7 @@
         </div>
     </div>
 </div>
-    <script src="js/main.min.js?_v=20240425111809" defer></script>
+    <script src="js/main.min.js?_v=20240425142249" defer></script>
 </body>
 
 </html>

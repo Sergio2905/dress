@@ -164,6 +164,9 @@ body._lock {
   border-radius: 5px;
   background: linear-gradient(135deg, rgb(34, 125, 176) 0%, rgb(31, 142, 209) 100%);
   padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-more {
@@ -847,7 +850,7 @@ body._lock {
   position: relative;
   background: url("../img/loading.gif") 50% no-repeat;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -871,7 +874,7 @@ body._lock {
 .prod-card__name {
   font-size: 0.875rem;
   font-weight: 500;
-  margin-bottom: 16px;
+  margin-bottom: 5px;
   color: var(--black);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -885,8 +888,7 @@ body._lock {
   font-family: "Manrope", sans-serif;
   font-size: 0.875rem;
   font-weight: 800;
-  margin-bottom: 8px;
-  text-align: center;
+  margin-bottom: 5px;
   color: var(--black);
 }
 
@@ -922,6 +924,7 @@ body._lock {
   color: #112241;
   font-weight: 500;
   margin-bottom: 16px;
+  font-size: 0.875rem;
 }
 
 .prod-card__view {
@@ -932,14 +935,15 @@ body._lock {
   align-items: center;
   justify-content: center;
   border-radius: 3px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(33, 33, 33, 0.1);
   position: relative;
   width: 100%;
   padding: 12px;
   margin: 0 8px 8px;
-  transform: translate(0, 150%);
   transition: all 0.5s ease;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .prod-card__view svg {
@@ -1176,6 +1180,10 @@ body._lock {
   transition: all 0.2s linear;
 }
 
+.input_select {
+  position: relative;
+}
+
 .input.warning {
   border: 2px solid #F5D884;
   background: linear-gradient(0deg, rgba(205, 129, 121, 0.02) 0%, rgba(205, 129, 121, 0.02) 100%), #FFF;
@@ -1350,10 +1358,10 @@ body._lock {
 
 .filter__clear {
   font-family: "Manrope", sans-serif;
-  font-size: 0.875rem;
-  font-weight: 700;
+  font-size: 0.775rem;
+  font-weight: 400;
   color: #112241;
-  margin-left: 8px;
+  margin-left: 10px;
   text-decoration: underline;
 }
 
@@ -1374,6 +1382,33 @@ body._lock {
 
 .filter__block {
   padding-top: 24px;
+}
+
+.filter__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.filter__btn {
+  border-radius: 5px;
+  flex: 1 1 auto;
+  height: 39px;
+}
+
+.filter__btn.btn-gradient {
+  font-size: 1rem;
+}
+
+.filter__btn.btn-white {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.filter__btn:not(:last-child) {
+  margin-right: 16px;
 }
 
 .filter__radio .radio-options__item {
@@ -1450,6 +1485,8 @@ body._lock {
   position: relative;
   padding-left: 32px;
   cursor: pointer;
+  display: block;
+  color: var(--black);
 }
 
 .filter__checkbox.active::before {
@@ -1555,6 +1592,7 @@ body._lock {
   font-size: 0.875rem;
   font-weight: 500;
   transition: all 0.2s linear;
+  color: var(--black);
 }
 
 .filter__size.active {
@@ -1591,6 +1629,7 @@ body._lock {
   background: var(--white);
   transition: all 0.2s linear;
   cursor: pointer;
+  color: var(--black);
 }
 
 .filter__color.active {
@@ -1736,6 +1775,8 @@ body._lock {
 
 .filter__select .option {
   padding: 4px 28px 4px 16px;
+  display: block;
+  color: var(--black);
 }
 
 .filter__select .option:hover {
@@ -1800,6 +1841,7 @@ body._lock {
 }
 
 .switcher__off {
+  background: #f6f6f6;
   transform: rotate(-90deg) translate(-32%, 0);
 }
 
@@ -1808,6 +1850,7 @@ body._lock {
 }
 
 .switcher__on {
+  background: #f6f6f6;
   font-weight: 700;
   font-size: 0.875rem;
   height: 36px;
@@ -2234,12 +2277,29 @@ body._lock {
   min-height: 100vh;
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .popup__content {
   width: 100%;
   padding: 30px;
   position: relative;
+}
+
+.popup__content.login {
+  max-width: 600px;
+  padding: 0;
+  margin: 0 15px;
+}
+
+.popup__content.login .login__body {
+  margin: 0;
+  padding: 40px;
+}
+
+.popup__content.login .login__form {
+  max-width: 100%;
 }
 
 .viewer {
@@ -2474,7 +2534,6 @@ body._lock {
   align-items: center;
   justify-content: flex-start;
   width: 150px;
-  min-width: 150px;
   margin-right: 40px;
   position: relative;
   z-index: 200;
@@ -4733,6 +4792,10 @@ body._lock {
   gap: 16px;
 }
 
+.category__content {
+  min-width: 0;
+}
+
 .category__block:not(:last-child) {
   margin-bottom: 16px;
 }
@@ -4789,10 +4852,6 @@ body._lock {
   margin-bottom: 15px;
 }
 
-.main-category__title {
-  margin-right: 24px;
-}
-
 .main-category__brand-title {
   font-size: 1.25rem;
   font-weight: 700;
@@ -4806,6 +4865,7 @@ body._lock {
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   padding: 10px;
+  margin-left: 50px;
 }
 
 .main-category__btn svg {
@@ -4897,8 +4957,8 @@ body._lock {
 .count-category__name,
 .sort-category__name {
   font-family: "Manrope", sans-serif;
-  font-weight: 600;
-  opacity: 0.6;
+  font-weight: 400;
+  opacity: 0.8;
   margin-right: 8px;
   white-space: nowrap;
 }
@@ -5034,16 +5094,23 @@ body._lock {
   display: flex;
   justify-content: flex-end;
   transition: all 0.5s ease;
-  transform: scale(0);
 }
 
-.prompt.active {
-  transform: scale(1);
+.prompt.active .prompt__text {
+  display: block;
+}
+
+.prompt.active .prompt__btn svg:first-child {
+  display: block;
+}
+
+.prompt.active .prompt__btn svg:last-child {
+  display: none;
 }
 
 .prompt__body {
   display: flex;
-  padding: 16px;
+  padding: 12px;
   background: linear-gradient(90deg, rgb(255, 236, 169) 0%, rgb(251, 218, 100) 100%);
   border-radius: 5px;
   z-index: 1;
@@ -5055,6 +5122,8 @@ body._lock {
   font-weight: 500;
   color: var(--black);
   white-space: nowrap;
+  display: none;
+  margin-right: 8px;
 }
 
 .prompt__btn {
@@ -5064,12 +5133,15 @@ body._lock {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 8px;
 }
 
 .prompt__btn svg {
-  width: 14px;
-  height: 14px;
+  width: 24px;
+  height: 24px;
+}
+
+.prompt__btn svg:first-child {
+  display: none;
 }
 
 .looks__body {
@@ -6494,6 +6566,33 @@ body._lock {
   display: block;
 }
 
+.login__header {
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login__header .login__title {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.login__close {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__close svg {
+  width: 100%;
+  height: 100%;
+}
+
 .login__title {
   margin-bottom: 16px;
 }
@@ -6525,6 +6624,9 @@ body._lock {
 
 .login__btn {
   width: 100%;
+}
+
+.login__btn:not(.btn-reg) {
   margin-bottom: 32px;
 }
 
@@ -6596,6 +6698,167 @@ body._lock {
   font-weight: 500;
   text-align: center;
   margin-bottom: 24px;
+}
+
+.login__select {
+  height: 100%;
+  width: 100%;
+}
+
+.login__select label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__select a {
+  color: var(--black);
+}
+
+.login__select input {
+  display: none;
+}
+
+.login__select .options-container {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  max-height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.2s linear;
+  overflow: hidden;
+  z-index: 10;
+  background: #fff;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 5px;
+}
+
+.login__select .options-container._active {
+  opacity: 1;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.login__select .selected,
+.login__select .option {
+  cursor: pointer;
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: all 0.2s linear;
+}
+
+.login__select .selected svg,
+.login__select .option svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--blue);
+  stroke-width: 2px;
+}
+
+.login__select .selected {
+  position: relative;
+  padding: 0 24px 0 0;
+  color: #A6A6A6;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.login__select .selected svg {
+  stroke: var(--white);
+}
+
+.login__select .selected::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  transform: translate(0, -50%);
+  -webkit-mask: url("../img/icons/icons.svg#arrow2") center/cover no-repeat;
+          mask: url("../img/icons/icons.svg#arrow2") center/cover no-repeat;
+  background: var(--black);
+  transition: all 0.2s linear;
+  border-radius: 50%;
+  border: 1px solid var(--blue);
+}
+
+.login__select .selected._active::after {
+  transform: translate(0, -50%) rotate(-180deg);
+}
+
+.login__select .option {
+  display: flex;
+  align-items: center;
+  padding: 5px 24px;
+}
+
+.login__select .option:hover {
+  background: rgb(245, 245, 245);
+}
+
+.login__checkbox {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--black);
+  margin-bottom: 16px;
+  line-height: 1.3;
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.login__checkbox::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  content: " ";
+  width: 18px;
+  height: 18px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  transition: all 0.3s linear;
+}
+
+.login__checkbox::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  -webkit-mask: url("../img/icons/icons.svg#check") center/14px 14px no-repeat;
+          mask: url("../img/icons/icons.svg#check") center/14px 14px no-repeat;
+  background: #fff;
+  opacity: 0;
+  transform: translate(0, -50%) scale(0);
+  transition: all 0.3s linear;
+}
+
+.login__checkbox.active::before {
+  background: #36BD54;
+}
+
+.login__checkbox.active::after {
+  opacity: 1;
+  transform: translate(0, -50%) scale(1);
+}
+
+.login__checkbox input {
+  display: none;
+}
+
+.login .success {
+  border-radius: 5px;
 }
 
 .reset {
@@ -6995,7 +7258,6 @@ body._lock {
   .input {
     height: calc(50px + 10 * (100vw - 320px) / 1600);
     margin-bottom: calc(12px + 12 * (100vw - 320px) / 1600);
-    padding: 0 calc(12px + 12 * (100vw - 320px) / 1600);
   }
 
   .filter__inputs .filter__input {
@@ -7161,6 +7423,10 @@ body._lock {
     -moz-column-gap: calc(8px + 8 * (100vw - 320px) / 1600);
          column-gap: calc(8px + 8 * (100vw - 320px) / 1600);
     margin-bottom: 32px;
+  }
+
+  .main-category__title {
+    font-size: calc(1rem + 14 * (100vw - 20rem) / 1600);
   }
 
   .main-category__btn {
@@ -7391,7 +7657,7 @@ body._lock {
     margin-bottom: calc(20px + 20 * (100vw - 320px) / 1600);
   }
 
-  .login__btn {
+  .login__btn:not(.btn-reg) {
     margin-bottom: calc(16px + 16 * (100vw - 320px) / 1600);
   }
 
@@ -7532,30 +7798,12 @@ body._lock {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .main-category__header {
-    flex-wrap: wrap;
-  }
-
-  .main-category__title {
-    order: 2;
-  }
-
-  .main-category__btn {
-    order: 3;
-  }
-
   .main-category__mode .mode__btn.grid2 {
     display: flex;
   }
 
   .main-category__mode .mode__btn.grid5 {
     display: none;
-  }
-
-  .main-category__prompt {
-    flex: 1 1 100%;
-    order: 1;
-    margin: 0 0 16px;
   }
 
   .prompt__text {
@@ -7890,6 +8138,10 @@ body._lock {
     order: 2;
   }
 
+  .popup__content.login .login__body {
+    padding: 24px;
+  }
+
   .header__icons {
     flex: 1 1 auto;
     justify-content: flex-end;
@@ -8112,8 +8364,25 @@ body._lock {
     display: none;
   }
 
+  .main-category__header {
+    flex-wrap: wrap;
+  }
+
+  .main-category__title {
+    order: 3;
+    flex: 1 1 100%;
+  }
+
+  .main-category__btn {
+    margin: 0 16px 16px 0;
+  }
+
   .main-category__count {
     display: none;
+  }
+
+  .main-category__prompt {
+    margin: 0 0 16px 0;
   }
 
   .count-category__body,
@@ -8283,6 +8552,15 @@ body._lock {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .main-category__header {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .main-category__btn {
+    margin: 0 0 16px 0;
+  }
+
   .main-category__mode .mode__btn.grid4 {
     display: none;
   }
@@ -8423,21 +8701,6 @@ body._lock {
 
   .category__cat.grid5 {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .main-category__header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .main-category__title {
-    order: 3;
-    margin: 0;
-  }
-
-  .main-category__btn {
-    order: 2;
-    margin-bottom: 16px;
   }
 
   .main-category__sort {
@@ -8607,7 +8870,8 @@ body._lock {
   }
 
   .prod-card:hover .prod-card__view {
-    transform: translate(0, 0);
+    opacity: 1;
+    visibility: visible;
   }
 
   .sizes-card:hover {
