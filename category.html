@@ -4,7 +4,7 @@
 <head>
     <title>Dresshub</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/category.min.css?_v=20240424134333">
+    <link rel="stylesheet" href="css/category.min.css?_v=20240425111809">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -102,13 +102,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="header__user user-header">
-                        <button type="button" class="user-header__icon" title="User menu">
-                            <svg>
-                                <use href="img/icons/icons.svg#user"></use>
-                            </svg>
-                        </button>
-                    </div>
+                    <button type="button" class="header__user popup-link" title="User" data-modal="reg">
+                        <svg>
+                            <use href="img/icons/icons.svg#user"></use>
+                        </svg>
+                    </button>
                     <button type="button" class="header__search-icon" title="Search">
                         <svg>
                             <use href="img/icons/icons.svg#search"></use>
@@ -1638,6 +1636,996 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="catalog__item prod-card">
+                                <div class="prod-card__labels">
+                                    <button type="button" class="prod-card__favorite" title="Faforite">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a href="#" class="prod-card__image">
+                                    <picture>
+                                        <source data-srcset="img/products/image10.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/products/image10.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                    <button class="prod-card__view">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#eye"></use>
+                                        </svg>
+                                        Quick view
+                                    </button>
+                                </a>
+                                <div class="prod-card__details">
+                                    <a href="#" class="prod-card__type">
+                                        Colmar
+                                    </a>
+                                    <a href="#" class="prod-card__name">
+                                        Colmar Side Zip Detail Quilted Jacket
+                                    </a>
+                                    <div class="prod-card__prices prices-card">
+                                        <div class="prices-card__wrapper">
+                                            <div class="prices-card__new">$ 333.67</div>
+                                            <div class="prices-card__old">$ 412.00</div>
+                                        </div>
+                                        <span class="prices-card__sale">-20 %</span>
+                                    </div>
+                                    <div class="prod-card__available">
+                                        Available in 2 stores
+                                    </div>
+                                    <div class="prod-card__sizes sizes-card">
+                                        <div class="sizes-card__wrapper">
+                                            <div class="sizes-card__title">Sizes:</div>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                        </div>
+                                    </div>
+                                    <div class="prod-card__colors colors-card">
+                                        <div class="colors-card__wrapper">
+                                            <div class="colors-card__title">Colors:</div>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/gray.svg" alt="Gray">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/white.svg" alt="White">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/yellow.svg" alt="Yellow">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/dark-gray.svg" alt="Dark gray">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/red.svg" alt="Red">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/green.svg" alt="Green">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/blue.svg" alt="Blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/light-blue.svg" alt="Light blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/purple.svg" alt="Purple">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/green.svg" alt="Green">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/blue.svg" alt="Blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/light-blue.svg" alt="Light blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/purple.svg" alt="Purple">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__item prod-card">
+                                <div class="prod-card__labels">
+                                    <button type="button" class="prod-card__favorite" title="Faforite">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a href="#" class="prod-card__image">
+                                    <picture>
+                                        <source data-srcset="img/products/image10.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/products/image10.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                    <button class="prod-card__view">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#eye"></use>
+                                        </svg>
+                                        Quick view
+                                    </button>
+                                </a>
+                                <div class="prod-card__details">
+                                    <a href="#" class="prod-card__type">
+                                        Colmar
+                                    </a>
+                                    <a href="#" class="prod-card__name">
+                                        Colmar Side Zip Detail Quilted Jacket
+                                    </a>
+                                    <div class="prod-card__prices prices-card">
+                                        <div class="prices-card__wrapper">
+                                            <div class="prices-card__new">$ 333.67</div>
+                                            <div class="prices-card__old">$ 412.00</div>
+                                        </div>
+                                        <span class="prices-card__sale">-20 %</span>
+                                    </div>
+                                    <div class="prod-card__available">
+                                        Available in 2 stores
+                                    </div>
+                                    <div class="prod-card__sizes sizes-card">
+                                        <div class="sizes-card__wrapper">
+                                            <div class="sizes-card__title">Sizes:</div>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                        </div>
+                                    </div>
+                                    <div class="prod-card__colors colors-card">
+                                        <div class="colors-card__wrapper">
+                                            <div class="colors-card__title">Colors:</div>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/gray.svg" alt="Gray">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/white.svg" alt="White">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/yellow.svg" alt="Yellow">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/dark-gray.svg" alt="Dark gray">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/red.svg" alt="Red">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/green.svg" alt="Green">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/blue.svg" alt="Blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/light-blue.svg" alt="Light blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/purple.svg" alt="Purple">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/green.svg" alt="Green">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/blue.svg" alt="Blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/light-blue.svg" alt="Light blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/purple.svg" alt="Purple">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__item prod-card">
+                                <div class="prod-card__labels">
+                                    <button type="button" class="prod-card__favorite" title="Faforite">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a href="#" class="prod-card__image">
+                                    <picture>
+                                        <source data-srcset="img/products/image10.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/products/image10.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                    <button class="prod-card__view">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#eye"></use>
+                                        </svg>
+                                        Quick view
+                                    </button>
+                                </a>
+                                <div class="prod-card__details">
+                                    <a href="#" class="prod-card__type">
+                                        Colmar
+                                    </a>
+                                    <a href="#" class="prod-card__name">
+                                        Colmar Side Zip Detail Quilted Jacket
+                                    </a>
+                                    <div class="prod-card__prices prices-card">
+                                        <div class="prices-card__wrapper">
+                                            <div class="prices-card__reg">$ 333.67</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-card__available">
+                                        Available in 2 stores
+                                    </div>
+                                    <div class="prod-card__sizes sizes-card">
+                                        <div class="sizes-card__wrapper">
+                                            <div class="sizes-card__title">Sizes:</div>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__item prod-card">
+                                <div class="prod-card__labels">
+                                    <button type="button" class="prod-card__favorite" title="Faforite">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a href="#" class="prod-card__image">
+                                    <picture>
+                                        <source data-srcset="img/products/image10.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/products/image10.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                    <button class="prod-card__view">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#eye"></use>
+                                        </svg>
+                                        Quick view
+                                    </button>
+                                </a>
+                                <div class="prod-card__details">
+                                    <a href="#" class="prod-card__type">
+                                        Colmar
+                                    </a>
+                                    <a href="#" class="prod-card__name">
+                                        Colmar Side Zip Detail Quilted Jacket
+                                    </a>
+                                    <div class="prod-card__prices prices-card">
+                                        <div class="prices-card__wrapper">
+                                            <div class="prices-card__new">$ 333.67</div>
+                                            <div class="prices-card__old">$ 412.00</div>
+                                        </div>
+                                        <span class="prices-card__sale">-20 %</span>
+                                    </div>
+                                    <div class="prod-card__available">
+                                        Available in 2 stores
+                                    </div>
+                                    <div class="prod-card__sizes sizes-card">
+                                        <div class="sizes-card__wrapper">
+                                            <div class="sizes-card__title">Sizes:</div>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__item prod-card">
+                                <div class="prod-card__labels">
+                                    <button type="button" class="prod-card__favorite" title="Faforite">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a href="#" class="prod-card__image">
+                                    <picture>
+                                        <source data-srcset="img/products/image10.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/products/image10.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                    <button class="prod-card__view">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#eye"></use>
+                                        </svg>
+                                        Quick view
+                                    </button>
+                                </a>
+                                <div class="prod-card__details">
+                                    <a href="#" class="prod-card__type">
+                                        Colmar
+                                    </a>
+                                    <a href="#" class="prod-card__name">
+                                        Colmar Side Zip Detail Quilted Jacket
+                                    </a>
+                                    <div class="prod-card__prices prices-card">
+                                        <div class="prices-card__wrapper">
+                                            <div class="prices-card__new">$ 333.67</div>
+                                            <div class="prices-card__old">$ 412.00</div>
+                                        </div>
+                                        <span class="prices-card__sale">-20 %</span>
+                                    </div>
+                                    <div class="prod-card__available">
+                                        Available in 2 stores
+                                    </div>
+                                    <div class="prod-card__sizes sizes-card">
+                                        <div class="sizes-card__wrapper">
+                                            <div class="sizes-card__title">Sizes:</div>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                        </div>
+                                    </div>
+                                    <div class="prod-card__colors colors-card">
+                                        <div class="colors-card__wrapper">
+                                            <div class="colors-card__title">Colors:</div>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/gray.svg" alt="Gray">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/white.svg" alt="White">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/yellow.svg" alt="Yellow">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/dark-gray.svg" alt="Dark gray">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/red.svg" alt="Red">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/green.svg" alt="Green">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/blue.svg" alt="Blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/light-blue.svg" alt="Light blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/purple.svg" alt="Purple">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/green.svg" alt="Green">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/blue.svg" alt="Blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/light-blue.svg" alt="Light blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/purple.svg" alt="Purple">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__item prod-card">
+                                <div class="prod-card__labels">
+                                    <button type="button" class="prod-card__favorite" title="Faforite">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a href="#" class="prod-card__image">
+                                    <picture>
+                                        <source data-srcset="img/products/image10.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/products/image10.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                    <button class="prod-card__view">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#eye"></use>
+                                        </svg>
+                                        Quick view
+                                    </button>
+                                </a>
+                                <div class="prod-card__details">
+                                    <a href="#" class="prod-card__type">
+                                        Colmar
+                                    </a>
+                                    <a href="#" class="prod-card__name">
+                                        Colmar Side Zip Detail Quilted Jacket
+                                    </a>
+                                    <div class="prod-card__prices prices-card">
+                                        <div class="prices-card__wrapper">
+                                            <div class="prices-card__new">$ 333.67</div>
+                                            <div class="prices-card__old">$ 412.00</div>
+                                        </div>
+                                        <span class="prices-card__sale">-20 %</span>
+                                    </div>
+                                    <div class="prod-card__available">
+                                        Available in 2 stores
+                                    </div>
+                                    <div class="prod-card__sizes sizes-card">
+                                        <div class="sizes-card__wrapper">
+                                            <div class="sizes-card__title">Sizes:</div>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                        </div>
+                                    </div>
+                                    <div class="prod-card__colors colors-card">
+                                        <div class="colors-card__wrapper">
+                                            <div class="colors-card__title">Colors:</div>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/gray.svg" alt="Gray">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/white.svg" alt="White">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/yellow.svg" alt="Yellow">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/dark-gray.svg" alt="Dark gray">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/red.svg" alt="Red">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/green.svg" alt="Green">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/blue.svg" alt="Blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/light-blue.svg" alt="Light blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/purple.svg" alt="Purple">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/green.svg" alt="Green">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/blue.svg" alt="Blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/light-blue.svg" alt="Light blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/purple.svg" alt="Purple">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__item prod-card">
+                                <div class="prod-card__labels">
+                                    <button type="button" class="prod-card__favorite" title="Faforite">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a href="#" class="prod-card__image">
+                                    <picture>
+                                        <source data-srcset="img/products/image10.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/products/image10.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                    <button class="prod-card__view">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#eye"></use>
+                                        </svg>
+                                        Quick view
+                                    </button>
+                                </a>
+                                <div class="prod-card__details">
+                                    <a href="#" class="prod-card__type">
+                                        Colmar
+                                    </a>
+                                    <a href="#" class="prod-card__name">
+                                        Colmar Side Zip Detail Quilted Jacket
+                                    </a>
+                                    <div class="prod-card__prices prices-card">
+                                        <div class="prices-card__wrapper">
+                                            <div class="prices-card__reg">$ 333.67</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-card__available">
+                                        Available in 2 stores
+                                    </div>
+                                    <div class="prod-card__sizes sizes-card">
+                                        <div class="sizes-card__wrapper">
+                                            <div class="sizes-card__title">Sizes:</div>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__item prod-card">
+                                <div class="prod-card__labels">
+                                    <button type="button" class="prod-card__favorite" title="Faforite">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a href="#" class="prod-card__image">
+                                    <picture>
+                                        <source data-srcset="img/products/image10.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/products/image10.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                    <button class="prod-card__view">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#eye"></use>
+                                        </svg>
+                                        Quick view
+                                    </button>
+                                </a>
+                                <div class="prod-card__details">
+                                    <a href="#" class="prod-card__type">
+                                        Colmar
+                                    </a>
+                                    <a href="#" class="prod-card__name">
+                                        Colmar Side Zip Detail Quilted Jacket
+                                    </a>
+                                    <div class="prod-card__prices prices-card">
+                                        <div class="prices-card__wrapper">
+                                            <div class="prices-card__new">$ 333.67</div>
+                                            <div class="prices-card__old">$ 412.00</div>
+                                        </div>
+                                        <span class="prices-card__sale">-20 %</span>
+                                    </div>
+                                    <div class="prod-card__available">
+                                        Available in 2 stores
+                                    </div>
+                                    <div class="prod-card__sizes sizes-card">
+                                        <div class="sizes-card__wrapper">
+                                            <div class="sizes-card__title">Sizes:</div>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__item prod-card">
+                                <div class="prod-card__labels">
+                                    <button type="button" class="prod-card__favorite" title="Faforite">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a href="#" class="prod-card__image">
+                                    <picture>
+                                        <source data-srcset="img/products/image10.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/products/image10.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                    <button class="prod-card__view">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#eye"></use>
+                                        </svg>
+                                        Quick view
+                                    </button>
+                                </a>
+                                <div class="prod-card__details">
+                                    <a href="#" class="prod-card__type">
+                                        Colmar
+                                    </a>
+                                    <a href="#" class="prod-card__name">
+                                        Colmar Side Zip Detail Quilted Jacket
+                                    </a>
+                                    <div class="prod-card__prices prices-card">
+                                        <div class="prices-card__wrapper">
+                                            <div class="prices-card__new">$ 333.67</div>
+                                            <div class="prices-card__old">$ 412.00</div>
+                                        </div>
+                                        <span class="prices-card__sale">-20 %</span>
+                                    </div>
+                                    <div class="prod-card__available">
+                                        Available in 2 stores
+                                    </div>
+                                    <div class="prod-card__sizes sizes-card">
+                                        <div class="sizes-card__wrapper">
+                                            <div class="sizes-card__title">Sizes:</div>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                        </div>
+                                    </div>
+                                    <div class="prod-card__colors colors-card">
+                                        <div class="colors-card__wrapper">
+                                            <div class="colors-card__title">Colors:</div>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/gray.svg" alt="Gray">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/white.svg" alt="White">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/yellow.svg" alt="Yellow">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/dark-gray.svg" alt="Dark gray">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/red.svg" alt="Red">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/green.svg" alt="Green">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/blue.svg" alt="Blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/light-blue.svg" alt="Light blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/purple.svg" alt="Purple">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/green.svg" alt="Green">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/blue.svg" alt="Blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/light-blue.svg" alt="Light blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/purple.svg" alt="Purple">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__item prod-card">
+                                <div class="prod-card__labels">
+                                    <button type="button" class="prod-card__favorite" title="Faforite">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a href="#" class="prod-card__image">
+                                    <picture>
+                                        <source data-srcset="img/products/image10.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/products/image10.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                    <button class="prod-card__view">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#eye"></use>
+                                        </svg>
+                                        Quick view
+                                    </button>
+                                </a>
+                                <div class="prod-card__details">
+                                    <a href="#" class="prod-card__type">
+                                        Colmar
+                                    </a>
+                                    <a href="#" class="prod-card__name">
+                                        Colmar Side Zip Detail Quilted Jacket
+                                    </a>
+                                    <div class="prod-card__prices prices-card">
+                                        <div class="prices-card__wrapper">
+                                            <div class="prices-card__new">$ 333.67</div>
+                                            <div class="prices-card__old">$ 412.00</div>
+                                        </div>
+                                        <span class="prices-card__sale">-20 %</span>
+                                    </div>
+                                    <div class="prod-card__available">
+                                        Available in 2 stores
+                                    </div>
+                                    <div class="prod-card__sizes sizes-card">
+                                        <div class="sizes-card__wrapper">
+                                            <div class="sizes-card__title">Sizes:</div>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                        </div>
+                                    </div>
+                                    <div class="prod-card__colors colors-card">
+                                        <div class="colors-card__wrapper">
+                                            <div class="colors-card__title">Colors:</div>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/gray.svg" alt="Gray">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/white.svg" alt="White">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/yellow.svg" alt="Yellow">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/dark-gray.svg" alt="Dark gray">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/red.svg" alt="Red">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/green.svg" alt="Green">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/blue.svg" alt="Blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/light-blue.svg" alt="Light blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/purple.svg" alt="Purple">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/green.svg" alt="Green">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/blue.svg" alt="Blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/light-blue.svg" alt="Light blue">
+                                            </a>
+                                            <a href="#" class="colors-card__item">
+                                                <img src="img/products/colors/purple.svg" alt="Purple">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__item prod-card">
+                                <div class="prod-card__labels">
+                                    <button type="button" class="prod-card__favorite" title="Faforite">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a href="#" class="prod-card__image">
+                                    <picture>
+                                        <source data-srcset="img/products/image10.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/products/image10.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                    <button class="prod-card__view">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#eye"></use>
+                                        </svg>
+                                        Quick view
+                                    </button>
+                                </a>
+                                <div class="prod-card__details">
+                                    <a href="#" class="prod-card__type">
+                                        Colmar
+                                    </a>
+                                    <a href="#" class="prod-card__name">
+                                        Colmar Side Zip Detail Quilted Jacket
+                                    </a>
+                                    <div class="prod-card__prices prices-card">
+                                        <div class="prices-card__wrapper">
+                                            <div class="prices-card__reg">$ 333.67</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-card__available">
+                                        Available in 2 stores
+                                    </div>
+                                    <div class="prod-card__sizes sizes-card">
+                                        <div class="sizes-card__wrapper">
+                                            <div class="sizes-card__title">Sizes:</div>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__item prod-card">
+                                <div class="prod-card__labels">
+                                    <button type="button" class="prod-card__favorite" title="Faforite">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a href="#" class="prod-card__image">
+                                    <picture>
+                                        <source data-srcset="img/products/image10.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/products/image10.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                    <button class="prod-card__view">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#eye"></use>
+                                        </svg>
+                                        Quick view
+                                    </button>
+                                </a>
+                                <div class="prod-card__details">
+                                    <a href="#" class="prod-card__type">
+                                        Colmar
+                                    </a>
+                                    <a href="#" class="prod-card__name">
+                                        Colmar Side Zip Detail Quilted Jacket
+                                    </a>
+                                    <div class="prod-card__prices prices-card">
+                                        <div class="prices-card__wrapper">
+                                            <div class="prices-card__new">$ 333.67</div>
+                                            <div class="prices-card__old">$ 412.00</div>
+                                        </div>
+                                        <span class="prices-card__sale">-20 %</span>
+                                    </div>
+                                    <div class="prod-card__available">
+                                        Available in 2 stores
+                                    </div>
+                                    <div class="prod-card__sizes sizes-card">
+                                        <div class="sizes-card__wrapper">
+                                            <div class="sizes-card__title">Sizes:</div>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                            <a href="#" class="sizes-card__item">50</a>
+                                            <a href="#" class="sizes-card__item">51</a>
+                                            <a href="#" class="sizes-card__item">52</a>
+                                            <a href="#" class="sizes-card__item">53</a>
+                                            <a href="#" class="sizes-card__item">54</a>
+                                            <a href="#" class="sizes-card__item">55</a>
+                                            <a href="#" class="sizes-card__item">56</a>
+                                            <a href="#" class="sizes-card__item">57</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <button type="button" class="category__more btn-more" title="Show more">
                             <svg>
@@ -1877,76 +2865,76 @@
                     <h4 class="tags__title title4">Tags</h4>
                     <div class="tags__slider">
                         <div class="tags__wrapper swiper-wrapper">
-                            <div class="tags__item swiper-slide">Leather jackets</div>
-                            <div class="tags__item swiper-slide">Denim jackets</div>
-                            <div class="tags__item swiper-slide">Bomber jackets</div>
-                            <div class="tags__item swiper-slide">Puffer jackets</div>
-                            <div class="tags__item swiper-slide">Windbreaker jackets</div>
-                            <div class="tags__item swiper-slide">Hooded jackets</div>
-                            <div class="tags__item swiper-slide">Fleece jackets</div>
-                            <div class="tags__item swiper-slide">Quilted jackets</div>
-                            <div class="tags__item swiper-slide">Wool jackets</div>
-                            <div class="tags__item swiper-slide">Down jackets</div>
-                            <div class="tags__item swiper-slide">Leather jackets</div>
-                            <div class="tags__item swiper-slide">Denim jackets</div>
-                            <div class="tags__item swiper-slide">Bomber jackets</div>
-                            <div class="tags__item swiper-slide">Puffer jackets</div>
+                            <a href="#" class="tags__item swiper-slide">Leather jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Denim jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Bomber jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Puffer jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Windbreaker jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Hooded jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Fleece jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Quilted jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Wool jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Down jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Leather jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Denim jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Bomber jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Puffer jackets</a>
                         </div>
                     </div>
                     <div class="tags__slider">
                         <div class="tags__wrapper swiper-wrapper">
-                            <div class="tags__item swiper-slide">Track jackets</div>
-                            <div class="tags__item swiper-slide">Parka jackets</div>
-                            <div class="tags__item swiper-slide">Blazer jackets</div>
-                            <div class="tags__item swiper-slide">Suede jackets</div>
-                            <div class="tags__item swiper-slide">Satin jackets</div>
-                            <div class="tags__item swiper-slide">Velvet jackets</div>
-                            <div class="tags__item swiper-slide">Camo jackets</div>
-                            <div class="tags__item swiper-slide">Military jackets</div>
-                            <div class="tags__item swiper-slide">Trench jackets</div>
-                            <div class="tags__item swiper-slide">Biker jackets</div>
-                            <div class="tags__item swiper-slide">Blazer jackets</div>
-                            <div class="tags__item swiper-slide">Suede jackets</div>
-                            <div class="tags__item swiper-slide">Satin jackets</div>
-                            <div class="tags__item swiper-slide">Velvet jackets</div>
+                            <a href="#" class="tags__item swiper-slide">Track jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Parka jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Blazer jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Suede jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Satin jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Velvet jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Camo jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Military jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Trench jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Biker jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Blazer jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Suede jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Satin jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Velvet jackets</a>
                         </div>
                     </div>
                     <div class="tags__slider">
                         <div class="tags__wrapper swiper-wrapper">
-                            <div class="tags__item swiper-slide">Moto jackets</div>
-                            <div class="tags__item swiper-slide">Rain jackets</div>
-                            <div class="tags__item swiper-slide">Ski jackets</div>
-                            <div class="tags__item swiper-slide">Snowboard jackets</div>
-                            <div class="tags__item swiper-slide">Anorak jackets</div>
-                            <div class="tags__item swiper-slide">Lightweight jackets</div>
-                            <div class="tags__item swiper-slide">Heavyweight jackets</div>
-                            <div class="tags__item swiper-slide">Shearling jackets</div>
-                            <div class="tags__item swiper-slide">Corduroy jackets</div>
-                            <div class="tags__item swiper-slide">Snowboard jackets</div>
-                            <div class="tags__item swiper-slide">Anorak jackets</div>
-                            <div class="tags__item swiper-slide">Lightweight jackets</div>
-                            <div class="tags__item swiper-slide">Heavyweight jackets</div>
-                            <div class="tags__item swiper-slide">Shearling jackets</div>
-                            <div class="tags__item swiper-slide">Corduroy jackets</div>
+                            <a href="#" class="tags__item swiper-slide">Moto jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Rain jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Ski jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Snowboard jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Anorak jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Lightweight jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Heavyweight jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Shearling jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Corduroy jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Snowboard jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Anorak jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Lightweight jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Heavyweight jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Shearling jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Corduroy jackets</a>
                         </div>
                     </div>
                     <div class="tags__slider">
                         <div class="tags__wrapper swiper-wrapper">
-                            <div class="tags__item swiper-slide">Harrington jackets</div>
-                            <div class="tags__item swiper-slide">Baseball jackets</div>
-                            <div class="tags__item swiper-slide">Flight jackets</div>
-                            <div class="tags__item swiper-slide">Jean jackets</div>
-                            <div class="tags__item swiper-slide">Work jackets</div>
-                            <div class="tags__item swiper-slide">Field jackets</div>
-                            <div class="tags__item swiper-slide">Motorcycle jackets</div>
-                            <div class="tags__item swiper-slide">Western jackets</div>
-                            <div class="tags__item swiper-slide">Sports jackets</div>
-                            <div class="tags__item swiper-slide">College jackets</div>
-                            <div class="tags__item swiper-slide">Harrington jackets</div>
-                            <div class="tags__item swiper-slide">Baseball jackets</div>
-                            <div class="tags__item swiper-slide">Flight jackets</div>
-                            <div class="tags__item swiper-slide">Jean jackets</div>
-                            <div class="tags__item swiper-slide">Work jackets</div>
+                            <a href="#" class="tags__item swiper-slide">Harrington jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Baseball jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Flight jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Jean jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Work jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Field jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Motorcycle jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Western jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Sports jackets</a>
+                            <a href="#" class="tags__item swiper-slide">College jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Harrington jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Baseball jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Flight jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Jean jackets</a>
+                            <a href="#" class="tags__item swiper-slide">Work jackets</a>
                         </div>
                     </div>
                 </div>
@@ -2072,7 +3060,7 @@
         </div>
     </div>
 </div>
-    <script src="js/category.min.js?_v=20240424134333" defer></script>
+    <script src="js/category.min.js?_v=20240425111809" defer></script>
 </body>
 
 </html>
