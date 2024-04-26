@@ -684,7 +684,7 @@ body._lock {
 
 .content {
   flex: 1 1 auto;
-  margin-bottom: 60px;
+  margin-bottom: 64px;
   max-width: 100%;
 }
 
@@ -6188,7 +6188,7 @@ body._lock {
 
 .contact__body {
   display: flex;
-  padding-bottom: 150px;
+  padding-bottom: 64px;
 }
 
 .contact__header {
