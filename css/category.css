@@ -3580,8 +3580,8 @@ body._lock {
 }
 
 .success__animation {
-  width: 64px;
-  height: 64px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   position: relative;
   margin-bottom: 32px;
@@ -3642,6 +3642,20 @@ body._lock {
 
 .success__notification {
   margin-bottom: 32px;
+  font-weight: 500;
+}
+
+.success__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+}
+
+.success__close svg {
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes wave {
