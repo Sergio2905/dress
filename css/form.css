@@ -1399,7 +1399,7 @@ body._lock {
 .login__or {
   font-family: "Manrope", sans-serif;
   color: #112241;
-  margin-bottom: 32px;
+  margin: 32px 0;
   position: relative;
   display: flex;
   align-items: center;
@@ -1675,6 +1675,33 @@ body._lock {
   margin-bottom: 16px;
 }
 
+.reset__header {
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reset__header .reset__title {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.reset__close {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset__close svg {
+  width: 100%;
+  height: 100%;
+}
+
 .alphabet__popular,
 .alphabet__letter {
   display: flex;
@@ -1879,18 +1906,25 @@ body._lock {
   position: relative;
 }
 
-.popup__content.login {
+.popup__content.login,
+.popup__content.reset {
   max-width: 600px;
   padding: 0;
   margin: 0 15px;
 }
 
-.popup__content.login .login__body {
+.popup__content.login .login__body,
+.popup__content.login .reset__body,
+.popup__content.reset .login__body,
+.popup__content.reset .reset__body {
   margin: 0;
   padding: 40px;
 }
 
-.popup__content.login .login__form {
+.popup__content.login .login__form,
+.popup__content.login .reset__form,
+.popup__content.reset .login__form,
+.popup__content.reset .reset__form {
   max-width: 100%;
 }
 
@@ -2548,7 +2582,10 @@ body._lock {
     display: block;
   }
 
-  .popup__content.login .login__body {
+  .popup__content.login .login__body,
+  .popup__content.login .reset__body,
+  .popup__content.reset .login__body,
+  .popup__content.reset .reset__body {
     padding: 24px;
   }
 }

@@ -4,7 +4,7 @@
 <head>
     <title>Dresshub</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/category.min.css?_v=20240426124502">
+    <link rel="stylesheet" href="css/category.min.css?_v=20240426143128">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -2938,6 +2938,117 @@
         </div>
     </div>
 </div>
+    <div class="popup" id="auth">
+    <div class="popup__wrapper">
+        <div class="popup__content login">
+            <div class="login__body">
+                <form action="#" class="login__form">
+                    <div class="login__header">
+                        <h1 class="login__title title1">Login</h1>
+                        <button type="button" class="login__close popup__close">
+                            <svg>
+                                <use href="img/icons/icons.svg#close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="login__intro">
+                        Don't have an account? <a href="#" class="login__link popup-link" data-modal="reg">Sign up</a>
+                    </div>
+                    <div class="login__input input">
+                        <input type="text" placeholder="E-mail">
+                    </div>
+                    <div class="login__input input">
+                        <input type="password" placeholder="Password">
+                        <a href="#" class="login__link popup-link" data-modal="reset">Forgot password?</a>
+                    </div>
+                    <button type="button" class="login__btn btn-reg btn-gradient">Login</button>
+                    <div class="login__or">
+                        <span>Or log in with</span>
+                    </div>
+                    <a href="#" class="login__social btn-blue">
+                        <picture>
+                            <source data-srcset="img/icons/facebook.svg" srcset="img/plug.png" type="image/webp">
+                            <img data-src="img/icons/facebook.svg" src="img/plug.png" alt="Image">
+                        </picture>
+                        Sing in with Facebook
+                    </a>
+                    <a href="#" class="login__social btn-white">
+                        <picture>
+                            <source data-srcset="img/icons/google.svg" srcset="img/plug.png" type="image/webp">
+                            <img data-src="img/icons/google.svg" src="img/plug.png" alt="Image">
+                        </picture>
+                        Sing in with Google
+                    </a>
+                    <div class="login__success success">
+                        <button type="button" class="success__close">
+                            <svg>
+                                <use href="img/icons/icons.svg#close"></use>
+                            </svg>
+                        </button>
+                        <div class="success__animation">
+                            <svg class="success__circle">
+                                <use href="img/icons/icons.svg#circle"></use>
+                            </svg>
+                            <svg class="success__check">
+                                <use href="img/icons/icons.svg#done"></use>
+                            </svg>
+                        </div>
+                        <div class="success__notification">
+                            You have successfully registered
+                        </div>
+                        <button type="button" class="success__btn btn-gradient">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="popup" id="reset">
+    <div class="popup__wrapper">
+        <div class="popup__content reset">
+            <div class="reset__body">
+                <form action="#" class="reset__form">
+                    <div class="reset__header">
+                        <h1 class="reset__title title1">Reset password</h1>
+                        <button type="button" class="reset__close popup__close">
+                            <svg>
+                                <use href="img/icons/icons.svg#close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="reset__input input">
+                        <input type="text" placeholder="E-mail">
+                    </div>
+                    <button type="button" class="reset__btn reset__btn_submit btn-gradient">
+                        Submit
+                    </button>
+                    <button type="button" class="reset__btn btn-white popup__close">
+                        Cancel
+                    </button>
+                    <div class="reset__success success">
+                        <button type="button" class="success__close">
+                            <svg>
+                                <use href="img/icons/icons.svg#close"></use>
+                            </svg>
+                        </button>
+                        <div class="success__animation">
+                            <svg class="success__circle">
+                                <use href="img/icons/icons.svg#circle"></use>
+                            </svg>
+                            <svg class="success__check">
+                                <use href="img/icons/icons.svg#done"></use>
+                            </svg>
+                        </div>
+                        <div class="success__notification">
+                            Please check your email
+                        </div>
+                        <button type="button" class="success__btn btn-gradient">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
     <div class="popup" id="viewer">
     <div class="popup__wrapper">
         <div class="popup__content viewer">
@@ -2989,7 +3100,7 @@
         </div>
     </div>
 </div>
-    <script src="js/category.min.js?_v=20240426124502" defer></script>
+    <script src="js/category.min.js?_v=20240426143128" defer></script>
 </body>
 
 </html>
