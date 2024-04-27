@@ -4,7 +4,7 @@
 <head>
     <title>Dresshub</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/main.min.css?_v=20240426143858">
+    <link rel="stylesheet" href="css/main.min.css?_v=20240427133820">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -22,7 +22,20 @@
                     </picture>
                 </a>
                 <div class="header__menu menu">
+                    <a href="#" class="menu__logo">
+                        <picture>
+                            <source data-srcset="img/logo.svg" srcset="img/plug.png" type="image/webp">
+                            <img data-src="img/logo.svg" src="img/plug.png" alt="Image">
+                        </picture>
+                    </a>
                     <div class="menu__wrapper" data-mob="submenu, append">
+                        <div class="menu__user">
+                            <button type="button" class="menu__user-btn popup-link" title="User" data-modal="reg">
+                                <svg>
+                                    <use href="img/icons/icons.svg#user2"></use>
+                                </svg>
+                            </button>
+                        </div>
                         <nav class="menu__body">
                             <ul class="menu__list">
                                 <li class="menu__item">
@@ -653,6 +666,31 @@
                             </a>
                         </li>
                     </ul>
+                    <div class="submenu__item submenu__item_currency">
+                        <a href="#" class="submenu__link">Currency</a>
+                        <div class="submenu__level2 level2-submenu">
+                            <div class="level2-submenu__header">
+                                <button type="button" class="level2-submenu__back">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow2-str"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="level2-submenu__body">
+                                <ul class="level2-submenu__list">
+                                    <li class="level2-submenu__item">
+                                        <a href="#" class="level2-submenu__link">$</a>
+                                    </li>
+                                    <li class="level2-submenu__item">
+                                        <a href="#" class="level2-submenu__link">$</a>
+                                    </li>
+                                    <li class="level2-submenu__item">
+                                        <a href="#" class="level2-submenu__link">$</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -4396,7 +4434,7 @@
         </div>
     </div>
 </div>
-    <script src="js/main.min.js?_v=20240426143858" defer></script>
+    <script src="js/main.min.js?_v=20240427133820" defer></script>
 </body>
 
 </html>
