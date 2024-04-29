@@ -4,7 +4,7 @@
 <head>
     <title>Dresshub</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/form.min.css?_v=20240429142605">
+    <link rel="stylesheet" href="css/form.min.css?_v=20240429150534">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -29,13 +29,6 @@
                         </picture>
                     </a>
                     <div class="menu__wrapper" data-mob="submenu, append">
-                        <div class="menu__user">
-                            <button type="button" class="menu__user-btn popup-link" title="User" data-modal="reg">
-                                <svg>
-                                    <use href="img/icons/icons.svg#user2"></use>
-                                </svg>
-                            </button>
-                        </div>
                         <nav class="menu__body">
                             <ul class="menu__list">
                                 <li class="menu__item">
@@ -115,7 +108,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="header__user popup-link" title="User" data-modal="reg">
+                    <button type="button" class="header__user popup-link" title="User" data-modal="auth">
                         <svg>
                             <use href="img/icons/icons.svg#user"></use>
                         </svg>
@@ -667,7 +660,12 @@
                         </li>
                     </ul>
                     <div class="submenu__item submenu__item_currency">
-                        <a href="#" class="submenu__link">Currency</a>
+                        <a href="#" class="submenu__link">
+                            Currency
+                            <svg>
+                                <use href="img/icons/icons.svg#dollar"></use>
+                            </svg>
+                        </a>
                         <div class="submenu__level2 level2-submenu">
                             <div class="level2-submenu__header">
                                 <button type="button" class="level2-submenu__back">
@@ -690,6 +688,14 @@
                                 </ul>
                             </div>
                         </div>
+                    </div>
+                    <div class="submenu__item submenu__item_user">
+                        <a href="#" class="submenu__link popup-link" data-modal="auth">
+                            Login
+                            <svg>
+                                <use href="img/icons/icons.svg#user2"></use>
+                            </svg>
+                        </a>
                     </div>
                 </nav>
             </div>
@@ -816,7 +822,7 @@
         </div>
     </div>
 </div>
-    <script src="js/form.min.js?_v=20240429142605" defer></script>
+    <script src="js/form.min.js?_v=20240429150534" defer></script>
 </body>
 
 </html>
