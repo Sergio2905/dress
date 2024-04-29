@@ -99,6 +99,7 @@ body {
   color: var(--black);
 }
 
+body.lock,
 body._lock {
   overflow: hidden;
 }
@@ -404,6 +405,7 @@ body._lock {
   justify-content: center;
   margin-left: 16px;
   display: none;
+  transition: all 0.1s ease 0.1s;
 }
 
 .header__search-icon svg {
@@ -713,22 +715,8 @@ body._lock {
   margin-right: 32px;
 }
 
-.submenu__item_brands,
-.submenu__item_sale {
-  margin-right: 0 !important;
-}
-
-.submenu__item_brands .submenu__link,
-.submenu__item_sale .submenu__link {
-  padding: 0 32px;
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.submenu__item_brands svg {
-  display: none;
-}
-
-.submenu__item_currency {
+.submenu__item_currency,
+.submenu__item_user {
   display: none;
   margin-top: 8px;
 }
@@ -1044,6 +1032,23 @@ body._lock {
   padding: 8px 16px;
   border-radius: 5px;
   background: var(--white);
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #212121 #fff;
+}
+
+.breadcrumbs__wrapper::-webkit-scrollbar {
+  width: 100%;
+  height: 1px;
+}
+
+.breadcrumbs__wrapper::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+.breadcrumbs__body {
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .breadcrumbs__link {
@@ -2531,7 +2536,7 @@ body._lock {
 
 .filter__header {
   height: 65px;
-  background: #000;
+  background: #fff;
   align-items: center;
   justify-content: space-between;
   position: absolute;
@@ -2540,6 +2545,7 @@ body._lock {
   width: 100%;
   padding: 0 16px;
   display: none;
+  border-bottom: 1px solid #000;
 }
 
 .filter__logo {
@@ -2558,6 +2564,12 @@ body._lock {
   width: 100%;
 }
 
+.filter__main-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
 .filter__close {
   width: 40px;
   height: 40px;
@@ -2571,7 +2583,7 @@ body._lock {
 .filter__close svg {
   width: 24px;
   height: 24px;
-  fill: var(--white);
+  fill: var(--black);
 }
 
 .filter__select {
@@ -4726,6 +4738,10 @@ body._lock {
     padding: 0 12px;
   }
 
+  .filter__main-title {
+    font-size: calc(1rem + 4 * (100vw - 20rem) / 1600);
+  }
+
   .filter__select .selected,
   .filter__select .option {
     font-size: calc(0.875rem + 2 * (100vw - 20rem) / 1600);
@@ -4873,6 +4889,12 @@ body._lock {
 
   .header__search-icon {
     display: flex;
+  }
+
+  .header__search-icon.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.1s ease 0.2s;
   }
 
   .search {
@@ -5029,7 +5051,6 @@ body._lock {
     padding: 81px 16px 16px;
     transition: all 0.3s linear;
     scrollbar-width: none;
-    padding-bottom: 230px;
   }
 
   .filter__body::-webkit-scrollbar {
@@ -5151,30 +5172,6 @@ body._lock {
 
   .submenu__item:not(:last-child) {
     margin-right: 0;
-  }
-
-  .submenu__item_brands .submenu__link,
-  .submenu__item_sale .submenu__link {
-    padding: 11px 20px;
-  }
-
-  .submenu__item_brands,
-  .submenu__item_sale {
-    margin-left: 0;
-    border-top: 1px solid rgba(17, 34, 65, 0.1);
-    padding: 0;
-  }
-
-  .submenu__item_brands {
-    margin-top: 8px;
-  }
-
-  .submenu__item_brands svg {
-    display: block;
-  }
-
-  .submenu__item_sale {
-    margin-top: 8px;
   }
 
   .submenu__link {
@@ -5316,14 +5313,6 @@ body._lock {
     grid-column: span 4;
   }
 
-  .breadcrumbs__body {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-  }
-
   .catalog {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -5408,11 +5397,17 @@ body._lock {
     flex: 1 1 50%;
   }
 
+  .menu__link.active,
+  .menu__link:hover {
+    border-bottom: 2px solid #000;
+  }
+
   .submenu__list {
     top: 259.4px;
   }
 
-  .submenu__item_currency {
+  .submenu__item_currency,
+  .submenu__item_user {
     display: block;
   }
 
@@ -5509,7 +5504,7 @@ body._lock {
   }
 
   .main-category__mode .mode__body {
-    border: 1px solid #000;
+    border: 2px solid #000;
   }
 
   .main-category__mode .mode__btn.grid1 {
@@ -5523,6 +5518,12 @@ body._lock {
   .main-category__filter {
     flex: 1 1 auto;
     margin-right: 8px;
+    border: 2px solid #000;
+  }
+
+  .count-category__body,
+  .sort-category__body {
+    border: 2px solid #000;
   }
 
   .count-category__select .options-container,
