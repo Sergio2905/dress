@@ -5378,7 +5378,28 @@ body._lock {
     margin: 0 0 16px 0;
   }
 
+  .main-category__mode .mode__body {
+    border: none;
+    padding: 0;
+    gap: 4px;
+  }
+
+  .main-category__mode .mode__btn {
+    height: 100%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    aspect-ratio: 1/1;
+  }
+
   .main-category__mode .mode__btn.grid4 {
+    display: none;
+  }
+
+  .main-category__filter svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    fill: #fff;
     display: none;
   }
 
@@ -5547,32 +5568,11 @@ body._lock {
     flex: unset;
   }
 
-  .main-category__mode .mode__body {
-    border: none;
-    padding: 0;
-    gap: 4px;
-  }
-
-  .main-category__mode .mode__btn {
-    height: 100%;
-    border: 2px solid #000;
-    border-radius: 5px;
-    aspect-ratio: 1/1;
-  }
-
   .main-category__mode .mode__btn.grid1 {
     display: flex;
   }
 
   .main-category__mode .mode__btn.grid3 {
-    display: none;
-  }
-
-  .main-category__filter svg {
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;
-    fill: #fff;
     display: none;
   }
 
