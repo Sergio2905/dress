@@ -8775,6 +8775,15 @@ body._lock {
     display: none;
   }
 
+  .main-category__filter {
+    flex: 1 1 auto;
+    margin-right: 8px;
+    border: 2px solid #000;
+    background: #000;
+    color: var(--white);
+    font-weight: 700;
+  }
+
   .search-category {
     flex-direction: column-reverse;
   }
@@ -8968,15 +8977,6 @@ body._lock {
 
   .main-category__mode .mode__btn.grid3 {
     display: none;
-  }
-
-  .main-category__filter {
-    flex: 1 1 auto;
-    margin-right: 8px;
-    border: 2px solid #000;
-    background: #000;
-    color: var(--white);
-    font-weight: 700;
   }
 
   .count-category__body,
