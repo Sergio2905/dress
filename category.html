@@ -4,7 +4,7 @@
 <head>
     <title>Dresshub</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/category.min.css?_v=20240430103105">
+    <link rel="stylesheet" href="css/category.min.css?_v=20240430151127">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -1213,125 +1213,135 @@
                                         today!
                                     </p>
                                     <div class="main-category__options">
-                                        <div class="main-category__sort sort-category">
-                                            <div class="sort-category__body">
-                                                <div class="sort-category__name">Sort:</div>
-                                                <div class="sort-category__select select-box">
-                                                    <div class="options-container">
-                                                        <div class="options-wrapper">
-                                                            <div class="options-header">
-                                                                <div class="options-title">Sort</div>
-                                                                <button type="button" class="options-btn">
-                                                                    <svg>
-                                                                        <use href="img/icons/icons.svg#close"></use>
-                                                                    </svg>
-                                                                </button>
-                                                            </div>
-                                                            <div class="option">
-                                                                <input type="radio" name="sort" id="recommended"
-                                                                    value="recommended">
-                                                                <label for="recommended">By recommended</label>
-                                                            </div>
-                                                            <div class="option">
-                                                                <input type="radio" name="sort" id="price-asc"
-                                                                    value="price-asc">
-                                                                <label for="price-asc">Price low to high</label>
-                                                            </div>
-                                                            <div class="option">
-                                                                <input type="radio" name="sort" id="price-desc"
-                                                                    value="price-desc">
-                                                                <label for="price-desc">Price high to low</label>
-                                                            </div>
-                                                            <div class="option">
-                                                                <input type="radio" name="sort" id="newest"
-                                                                    value="newest">
-                                                                <label for="newest">Newest</label>
-                                                            </div>
-                                                            <div class="option">
-                                                                <input type="radio" name="sort" id="oldest"
-                                                                    value="oldest">
-                                                                <label for="oldest">Oldest</label>
-                                                            </div>
-                                                            <div class="option">
-                                                                <input type="radio" name="sort" id="brands-asc"
-                                                                    value="brands-asc">
-                                                                <label for="brands-asc">Brands A-Z</label>
-                                                            </div>
-                                                            <div class="option">
-                                                                <input type="radio" name="sort" id="brands-desc"
-                                                                    value="brands-desc">
-                                                                <label for="brands-desc">Brands Z-A</label>
+                                        <div class="main-category__wrapper">
+                                            <div class="main-category__sort sort-category">
+                                                <div class="sort-category__body">
+                                                    <div class="sort-category__name">Sort:</div>
+                                                    <div class="sort-category__select select-box">
+                                                        <div class="options-container">
+                                                            <div class="options-wrapper">
+                                                                <div class="options-header">
+                                                                    <div class="options-title">Sort</div>
+                                                                    <button type="button" class="options-btn">
+                                                                        <svg>
+                                                                            <use href="img/icons/icons.svg#close">
+                                                                            </use>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="option">
+                                                                    <input type="radio" name="sort" id="recommended"
+                                                                        value="recommended">
+                                                                    <label for="recommended">By recommended</label>
+                                                                </div>
+                                                                <div class="option">
+                                                                    <input type="radio" name="sort" id="price-asc"
+                                                                        value="price-asc">
+                                                                    <label for="price-asc">Price low to high</label>
+                                                                </div>
+                                                                <div class="option">
+                                                                    <input type="radio" name="sort" id="price-desc"
+                                                                        value="price-desc">
+                                                                    <label for="price-desc">Price high to low</label>
+                                                                </div>
+                                                                <div class="option">
+                                                                    <input type="radio" name="sort" id="newest"
+                                                                        value="newest">
+                                                                    <label for="newest">Newest</label>
+                                                                </div>
+                                                                <div class="option">
+                                                                    <input type="radio" name="sort" id="oldest"
+                                                                        value="oldest">
+                                                                    <label for="oldest">Oldest</label>
+                                                                </div>
+                                                                <div class="option">
+                                                                    <input type="radio" name="sort" id="brands-asc"
+                                                                        value="brands-asc">
+                                                                    <label for="brands-asc">Brands A-Z</label>
+                                                                </div>
+                                                                <div class="option">
+                                                                    <input type="radio" name="sort" id="brands-desc"
+                                                                        value="brands-desc">
+                                                                    <label for="brands-desc">Brands Z-A</label>
+                                                                </div>
                                                             </div>
                                                         </div>
+                                                        <div class="selected">
+                                                            By recommended
+                                                        </div>
+                                                        <button class="select-btn">
+                                                            <svg>
+                                                                <use href="img/icons/icons.svg#sort"></use>
+                                                            </svg>
+                                                        </button>
                                                     </div>
-                                                    <div class="selected">
-                                                        By recommended
-                                                    </div>
-                                                    <button class="select-btn">
+                                                </div>
+                                            </div>
+                                            <button type="button" class="main-category__filter btn-white"
+                                                title="Filter">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#bars"></use>
+                                                </svg>
+                                                Filters
+                                            </button>
+                                            <div class="main-category__mode mode">
+                                                <div class="mode__body">
+                                                    <button type="button" class="mode__btn grid1" data-mode="grid1"
+                                                        title="View">
                                                         <svg>
-                                                            <use href="img/icons/icons.svg#sort"></use>
+                                                            <use href="img/icons/icons.svg#mode1"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <button type="button" class="mode__btn grid2" data-mode="grid2"
+                                                        title="View">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#mode2"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <button type="button" class="mode__btn grid3" data-mode="grid3"
+                                                        title="View">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#mode3"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <button type="button" class="mode__btn active grid4"
+                                                        data-mode="grid4" title="View">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#mode4"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <button type="button" class="mode__btn grid5" data-mode="grid5"
+                                                        title="View">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#mode5"></use>
                                                         </svg>
                                                     </button>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <button type="button" class="main-category__filter btn-white" title="Filter">
-                                            Filters
-                                        </button>
-                                        <div class="main-category__mode mode">
-                                            <div class="mode__body">
-                                                <button type="button" class="mode__btn grid1" data-mode="grid1"
-                                                    title="View">
-                                                    <svg>
-                                                        <use href="img/icons/icons.svg#mode1"></use>
-                                                    </svg>
-                                                </button>
-                                                <button type="button" class="mode__btn grid2" data-mode="grid2"
-                                                    title="View">
-                                                    <svg>
-                                                        <use href="img/icons/icons.svg#mode2"></use>
-                                                    </svg>
-                                                </button>
-                                                <button type="button" class="mode__btn grid3" data-mode="grid3"
-                                                    title="View">
-                                                    <svg>
-                                                        <use href="img/icons/icons.svg#mode3"></use>
-                                                    </svg>
-                                                </button>
-                                                <button type="button" class="mode__btn active grid4" data-mode="grid4"
-                                                    title="View">
-                                                    <svg>
-                                                        <use href="img/icons/icons.svg#mode4"></use>
-                                                    </svg>
-                                                </button>
-                                                <button type="button" class="mode__btn grid5" data-mode="grid5"
-                                                    title="View">
-                                                    <svg>
-                                                        <use href="img/icons/icons.svg#mode5"></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="main-category__count count-category">
-                                            <div class="count-category__body">
-                                                <div class="count-category__name">On page:</div>
-                                                <div class="count-category__select select-box">
-                                                    <div class="options-container">
-                                                        <div class="option">
-                                                            <input type="radio" name="count" id="count40" value="40">
-                                                            <label for="count40">40</label>
+                                            <div class="main-category__count count-category">
+                                                <div class="count-category__body">
+                                                    <div class="count-category__name">On page:</div>
+                                                    <div class="count-category__select select-box">
+                                                        <div class="options-container">
+                                                            <div class="option">
+                                                                <input type="radio" name="count" id="count40"
+                                                                    value="40">
+                                                                <label for="count40">40</label>
+                                                            </div>
+                                                            <div class="option">
+                                                                <input type="radio" name="count" id="count80"
+                                                                    value="80">
+                                                                <label for="count80">80</label>
+                                                            </div>
+                                                            <div class="option">
+                                                                <input type="radio" name="count" id="count140"
+                                                                    value="140">
+                                                                <label for="count140">140</label>
+                                                            </div>
                                                         </div>
-                                                        <div class="option">
-                                                            <input type="radio" name="count" id="count80" value="80">
-                                                            <label for="count80">80</label>
+                                                        <div class="selected">
+                                                            80
                                                         </div>
-                                                        <div class="option">
-                                                            <input type="radio" name="count" id="count140" value="140">
-                                                            <label for="count140">140</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="selected">
-                                                        80
                                                     </div>
                                                 </div>
                                             </div>
@@ -2844,6 +2854,69 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="category__tags tags">
+                            <h4 class="tags__title title4">Tags</h4>
+                            <div class="tags__body">
+                                <a href="#" class="tags__item swiper-slide">Leather jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Denim jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Bomber jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Puffer jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Windbreaker jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Hooded jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Fleece jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Quilted jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Wool jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Down jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Leather jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Denim jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Bomber jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Puffer jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Track jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Parka jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Blazer jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Suede jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Satin jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Velvet jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Camo jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Military jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Trench jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Biker jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Blazer jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Suede jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Satin jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Velvet jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Moto jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Rain jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Ski jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Snowboard jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Anorak jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Lightweight jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Heavyweight jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Shearling jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Corduroy jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Snowboard jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Anorak jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Lightweight jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Heavyweight jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Shearling jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Corduroy jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Harrington jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Baseball jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Flight jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Jean jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Work jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Field jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Motorcycle jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Western jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Sports jackets</a>
+                                <a href="#" class="tags__item swiper-slide">College jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Harrington jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Baseball jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Flight jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Jean jackets</a>
+                                <a href="#" class="tags__item swiper-slide">Work jackets</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -3153,7 +3226,7 @@
         </div>
     </div>
 </div>
-    <script src="js/category.min.js?_v=20240430103105" defer></script>
+    <script src="js/category.min.js?_v=20240430151127" defer></script>
 </body>
 
 </html>

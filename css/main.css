@@ -2007,10 +2007,10 @@ body._lock {
 
 .breadcrumbs {
   margin: 16px 0;
+  position: relative;
 }
 
 .breadcrumbs__wrapper {
-  padding: 8px 16px;
   border-radius: 5px;
   background: var(--white);
   overflow-x: auto;
@@ -2027,7 +2027,25 @@ body._lock {
   background: #fff;
 }
 
+.breadcrumbs__wrapper::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0) 100%);
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.breadcrumbs__wrapper.scroll::before {
+  opacity: 1;
+}
+
 .breadcrumbs__body {
+  padding: 8px 16px;
   width: -moz-max-content;
   width: max-content;
 }
