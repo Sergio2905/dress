@@ -3047,6 +3047,10 @@ body._lock {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .prod-card__view {
+    display: none;
+  }
+
   .cookies__body {
     padding: 24px;
   }

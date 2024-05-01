@@ -5449,7 +5449,7 @@ body._lock {
     height: 16px;
     margin-right: 8px;
     fill: #fff;
-    display: none;
+    display: block;
   }
 
   .main-category__filter {
@@ -5539,6 +5539,10 @@ body._lock {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+  }
+
+  .prod-card__view {
+    display: none;
   }
 
   .cookies__body {

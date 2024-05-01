@@ -4170,6 +4170,10 @@ body._lock {
     align-items: flex-end;
   }
 
+  .prod-card__view {
+    display: none;
+  }
+
   .cookies__body {
     padding: 24px;
   }

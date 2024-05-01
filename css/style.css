@@ -8810,6 +8810,10 @@ body._lock {
     align-items: flex-end;
   }
 
+  .prod-card__view {
+    display: none;
+  }
+
   .cookies__body {
     padding: 24px;
   }
@@ -8894,7 +8898,7 @@ body._lock {
     height: 16px;
     margin-right: 8px;
     fill: #fff;
-    display: none;
+    display: block;
   }
 
   .main-category__filter {
