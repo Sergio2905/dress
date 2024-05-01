@@ -1716,12 +1716,12 @@ body._lock {
 .prod-card__name {
   font-size: 0.875rem;
   font-weight: 500;
-  margin-bottom: 5px;
+  margin-bottom: 16px;
   color: var(--black);
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   line-height: 1.5;
 }
@@ -1730,7 +1730,7 @@ body._lock {
   font-family: "Manrope", sans-serif;
   font-size: 0.875rem;
   font-weight: 800;
-  margin-bottom: 5px;
+  margin-bottom: 16px;
   color: var(--black);
 }
 
@@ -1767,6 +1767,10 @@ body._lock {
   font-weight: 500;
   margin-bottom: 16px;
   font-size: 0.875rem;
+}
+
+.prod-card__available b {
+  font-weight: 600;
 }
 
 .prod-card__view {
@@ -1810,6 +1814,7 @@ body._lock {
   color: var(--blue);
   font-weight: 500;
   white-space: nowrap;
+  font-size: 1rem;
 }
 
 .prices-card__new {
@@ -1817,6 +1822,7 @@ body._lock {
   color: var(--red);
   margin-right: 4px;
   white-space: nowrap;
+  font-size: 1rem;
 }
 
 .prices-card__old {
@@ -2752,13 +2758,49 @@ body._lock {
     gap: calc(5px + 4 * (100vw - 320px) / 1600);
   }
 
+  .prod-card__name {
+    font-size: calc(0.8125rem + 1 * (100vw - 20rem) / 1600);
+  }
+
   .prod-card__type {
-    font-size: calc(0.75rem + 2 * (100vw - 20rem) / 1600);
+    font-size: calc(0.8125rem + 1 * (100vw - 20rem) / 1600);
   }
 
   .prod-card__out {
     font-size: calc(0.75rem + 2 * (100vw - 20rem) / 1600);
     padding: 8px calc(8px + 8 * (100vw - 320px) / 1600);
+  }
+
+  .prod-card__available {
+    font-size: calc(0.8125rem + 1 * (100vw - 20rem) / 1600);
+  }
+
+  .prices-card__reg {
+    font-size: calc(0.9375rem + 1 * (100vw - 20rem) / 1600);
+  }
+
+  .prices-card__new {
+    font-size: calc(0.9375rem + 1 * (100vw - 20rem) / 1600);
+  }
+
+  .prices-card__old {
+    font-size: calc(0.6875rem + 1 * (100vw - 20rem) / 1600);
+  }
+
+  .prices-card__sale {
+    font-size: 0.875rem;
+  }
+
+  .sizes-card__title {
+    font-size: calc(0.8125rem + 1 * (100vw - 20rem) / 1600);
+  }
+
+  .sizes-card__item {
+    font-size: calc(0.8125rem + 1 * (100vw - 20rem) / 1600);
+  }
+
+  .colors-card__title {
+    font-size: calc(0.8125rem + 1 * (100vw - 20rem) / 1600);
   }
 
   .input {
