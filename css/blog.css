@@ -1886,6 +1886,7 @@ body._lock {
   top: 50%;
   transform: translate(0, -50%);
   z-index: 1;
+  pointer-events: none;
 }
 
 .viewer__prev,
@@ -1898,6 +1899,7 @@ body._lock {
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 20px white;
+  pointer-events: all;
 }
 
 .viewer__prev svg,
