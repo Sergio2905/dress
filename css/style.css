@@ -8882,7 +8882,15 @@ body._lock {
   }
 
   .image-product {
-    padding-bottom: 40px;
+    padding: 6px 6px 40px;
+  }
+
+  .image-product__body {
+    min-height: 260px;
+  }
+
+  .image-product__item {
+    min-height: calc(var(--app-height) - 280px);
   }
 
   .image-product__pagination {
@@ -9149,10 +9157,6 @@ body._lock {
   .card-main__author {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .image-product__body {
-    min-height: 260px;
   }
 
   .thumbs-product__body {
