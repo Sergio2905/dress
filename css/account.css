@@ -2179,6 +2179,10 @@ body._lock {
   justify-content: center;
 }
 
+.viewer__slider {
+  overflow: hidden;
+}
+
 .viewer__close {
   position: fixed;
   top: 30px;
@@ -2215,6 +2219,10 @@ body._lock {
 
 .viewer__slide {
   width: 100% !important;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .viewer__navigation {
