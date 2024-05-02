@@ -5096,6 +5096,7 @@ body._lock {
   align-items: center;
   background: var(--white);
   width: 100%;
+  transition: all 0.5s ease;
 }
 
 .main-category__sort {
@@ -8885,7 +8886,9 @@ body._lock {
 
   .main-category__wrapper.sticky {
     position: fixed;
-    top: 24px;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 50;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     padding: 16px;
