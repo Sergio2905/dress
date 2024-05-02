@@ -1362,6 +1362,18 @@ body._lock {
   max-width: 100%;
 }
 
+.popup__content.product {
+  max-width: 1657px;
+  padding: 0 32px 80px;
+  background: var(--white);
+}
+
+.popup__content.product .product__body {
+  border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+  border-top: 1px solid rgba(33, 33, 33, 0.2);
+  padding: 64px 0;
+}
+
 .viewer {
   position: relative;
   display: flex;

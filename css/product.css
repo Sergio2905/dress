@@ -1150,6 +1150,19 @@ body._lock {
   margin-bottom: 16px;
 }
 
+.product__header {
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.product__close svg {
+  width: 24px;
+  height: 24px;
+}
+
 .image-product {
   grid-column: span 12;
 }
@@ -2958,6 +2971,18 @@ body._lock {
 .popup__content.reset .login__form,
 .popup__content.reset .reset__form {
   max-width: 100%;
+}
+
+.popup__content.product {
+  max-width: 1657px;
+  padding: 0 32px 80px;
+  background: var(--white);
+}
+
+.popup__content.product .product__body {
+  border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+  border-top: 1px solid rgba(33, 33, 33, 0.2);
+  padding: 64px 0;
 }
 
 .viewer {
