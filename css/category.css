@@ -3228,7 +3228,7 @@ body._lock {
 }
 
 .popup__wrapper {
-  min-height: 100vh;
+  min-height: 100%;
   position: relative;
   display: flex;
   align-items: center;
@@ -3267,6 +3267,7 @@ body._lock {
   max-width: 1657px;
   padding: 0 32px 80px;
   background: var(--white);
+  margin: 16px;
 }
 
 .popup__content.product .product__body {
@@ -5413,6 +5414,7 @@ body._lock {
   visibility: hidden;
   transition: all 0.2s linear;
   width: 100%;
+  top: 0;
 }
 
 .tabs__block._active {
@@ -6797,7 +6799,7 @@ body._lock {
   }
 
   .image-product__item {
-    min-height: calc(var(--app-height) - 280px);
+    min-height: calc(100vh - 280px);
   }
 
   .image-product__pagination {
