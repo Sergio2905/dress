@@ -8892,7 +8892,7 @@ body._lock {
   }
 
   .image-product__item {
-    min-height: calc(100vh - 280px);
+    min-height: calc(100vh - 320px);
   }
 
   .image-product__pagination {
