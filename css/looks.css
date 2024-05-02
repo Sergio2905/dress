@@ -2164,6 +2164,7 @@ body._lock {
   top: 30px;
   right: 30px;
   z-index: 100;
+  mix-blend-mode: difference;
 }
 
 .viewer__close svg {
@@ -3130,6 +3131,18 @@ body._lock {
   .popup__content.reset .login__body,
   .popup__content.reset .reset__body {
     padding: 24px;
+  }
+
+  .viewer {
+    padding: 15px;
+  }
+
+  .viewer__image {
+    padding: 0;
+  }
+
+  .viewer__navigation {
+    display: none;
   }
 }
 
