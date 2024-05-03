@@ -1818,6 +1818,7 @@ body._lock {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  z-index: 1;
 }
 
 .success.active {

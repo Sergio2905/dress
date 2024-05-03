@@ -5431,7 +5431,7 @@ body._lock {
 }
 
 .looks__body {
-  padding-bottom: 150px;
+  padding-bottom: 64px;
 }
 
 .looks__main {
@@ -5626,7 +5626,7 @@ body._lock {
 }
 
 .look__body {
-  padding-bottom: 150px;
+  padding-bottom: 64px;
 }
 
 .look__main {
@@ -6588,7 +6588,7 @@ body._lock {
 }
 
 .account__body {
-  padding-bottom: 150px;
+  padding-bottom: 64px;
 }
 
 .account__tabs {
@@ -7805,10 +7805,6 @@ body._lock {
     font-size: calc(0.875rem + 2 * (100vw - 20rem) / 1600);
   }
 
-  .looks__body {
-    padding-bottom: calc(50px + 100 * (100vw - 320px) / 1600);
-  }
-
   .looks__main {
     padding: calc(8px + 8 * (100vw - 320px) / 1600);
   }
@@ -7869,10 +7865,6 @@ body._lock {
 
   .goods-looks .tabs__header {
     margin-bottom: calc(24px + 32 * (100vw - 320px) / 1600);
-  }
-
-  .look__body {
-    padding-bottom: calc(50px + 100 * (100vw - 320px) / 1600);
   }
 
   .look__main {
@@ -7961,10 +7953,6 @@ body._lock {
 
   .error-page__title {
     font-size: 1.625rem;
-  }
-
-  .account__body {
-    padding-bottom: calc(50px + 100 * (100vw - 320px) / 1600);
   }
 
   .account__tabs .tabs__header {
