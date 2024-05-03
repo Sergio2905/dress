@@ -2155,7 +2155,7 @@ body._lock {
 
 .popup__content.product {
   max-width: 1657px;
-  padding: 0 32px 80px;
+  padding: 0 16px 40px;
   background: var(--white);
   margin: 16px;
 }
@@ -2163,7 +2163,7 @@ body._lock {
 .popup__content.product .product__body {
   border-bottom: 1px solid rgba(33, 33, 33, 0.2);
   border-top: 1px solid rgba(33, 33, 33, 0.2);
-  padding: 64px 0;
+  padding: 32px 0;
 }
 
 .viewer {
